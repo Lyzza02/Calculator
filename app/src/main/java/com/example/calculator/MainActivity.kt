@@ -9,6 +9,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     var dotValue:Boolean=true
+    var plusMinsValue:Boolean=true
     var holder: String = ""
     var holder2: String = ""
     var isNewOp = true
@@ -29,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             dotValue=true
             textView_input.setText("")
             textView_output.setText("")
+            oldNumber = ""
+            newNumber = ""
+            holder = ""
+            holder2 = ""
+            prevNum = ""
         }
     }
 
@@ -60,7 +66,13 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             R.id.btn_plusMinus ->{
-                textbox = "-$textbox"
+                if(plusMinsValue){
+                    textbox = "-$textbox"
+                    plusMinsValue = false
+                } else {
+
+                    plusMinsValue = true
+                }
             }
         }
         textView_output.setText(textbox)
