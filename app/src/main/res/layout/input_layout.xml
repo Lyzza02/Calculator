@@ -9,7 +9,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_input"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,10 +17,9 @@
         android:background="@color/black"
         android:padding="10dp"
         android:gravity="end"
-        android:text="" />
+        android:text="12+40" />
 
     <TextView
-        android:id="@+id/text_output"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +28,7 @@
         android:background="@color/black"
         android:padding="10dp"
         android:gravity="end"
-        android:text="" />
+        android:text="52" />
 
 
 </LinearLayout>

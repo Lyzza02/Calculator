@@ -22,17 +22,16 @@
             android:textColor="@color/white"
             android:textSize="25dp" />
         <Button
-            android:id="@+id/btn_plusMinus"
+            android:id="@+id/btn_bracket"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_row="0"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:background="@color/black"
-            android:text="+/-"
+            android:text="()"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_percent"
             android:layout_width="wrap_content"
@@ -44,9 +43,6 @@
             android:text="%"
             android:textColor="@color/white"
             android:textSize="25dp" />
-
-
-        <!-- row 1 -->
         <Button
             android:id="@+id/btn_division"
             android:layout_width="wrap_content"
@@ -57,9 +53,10 @@
             android:background="@color/black"
             android:text="/"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onOperator"/>
+            android:textSize="25dp" />
 
+
+        <!-- row 1 -->
         <Button
             android:id="@+id/btn_seven"
             android:layout_width="wrap_content"
@@ -70,8 +67,7 @@
             android:background="@color/black"
             android:text="7"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_eight"
             android:layout_width="wrap_content"
@@ -82,8 +78,7 @@
             android:background="@color/black"
             android:text="8"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_nine"
             android:layout_width="wrap_content"
@@ -94,8 +89,7 @@
             android:background="@color/black"
             android:text="9"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_multiply"
             android:layout_width="wrap_content"
@@ -106,8 +100,7 @@
             android:background="@color/black"
             android:text="x"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onOperator"/>
+            android:textSize="25dp" />
 
         <!-- row 2 -->
         <Button
@@ -120,8 +113,7 @@
             android:background="@color/black"
             android:text="4"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_five"
@@ -133,8 +125,7 @@
             android:background="@color/black"
             android:text="5"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_six"
@@ -146,8 +137,7 @@
             android:background="@color/black"
             android:text="6"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_subtract"
             android:layout_width="wrap_content"
@@ -158,8 +148,7 @@
             android:background="@color/black"
             android:text="-"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onOperator"/>
+            android:textSize="25dp" />
 
         <!-- row 3 -->
         <Button
@@ -172,8 +161,7 @@
             android:background="@color/black"
             android:text="1"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_two"
             android:layout_width="wrap_content"
@@ -184,8 +172,7 @@
             android:background="@color/black"
             android:text="2"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
         <Button
             android:id="@+id/btn_three"
             android:layout_width="wrap_content"
@@ -196,8 +183,7 @@
             android:background="@color/black"
             android:text="3"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_add"
@@ -209,8 +195,7 @@
             android:background="@color/black"
             android:text="+"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onOperator"/>
+            android:textSize="25dp" />
 
         <!-- row 3 -->
         <Button
@@ -236,8 +221,7 @@
             android:background="@color/black"
             android:text="0"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="onNumber"/>
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_equals"
@@ -249,7 +233,6 @@
             android:background="@color/teal_700"
             android:text="="
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:onClick="equalsEve"/>
+            android:textSize="25dp" />
     </GridLayout>
 </RelativeLayout>
