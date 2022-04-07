@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             newNumber = ""
             holder = ""
             holder2 = ""
-            prevNum = ""
         }
     }
 
@@ -67,10 +66,11 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.btn_plusMinus ->{
                 if(plusMinsValue){
+                    holder2 = textbox
                     textbox = "-$textbox"
                     plusMinsValue = false
                 } else {
-
+                    textbox = holder2
                     plusMinsValue = true
                 }
             }
