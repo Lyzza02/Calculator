@@ -35,18 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         val clear = findViewById<Button>(R.id.btn_c)
         clear.setOnClickListener{
-            condition_operator = true
-            dotValue=true
-            plusMinsValue = true
-
-            textView_input.setText("")
-            textView_output.setText("")
-
-            oldNumber = ""
-            newNumber = ""
-
-            holder = ""
-            holder2 = ""
+            restart()
         }
     }
 
@@ -101,6 +90,7 @@ class MainActivity : AppCompatActivity() {
             var msg = "One operator at a time"
             val toast = Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT)
             toast.show()
+            restart()
         } else {
             when(buttonOnClick.id){
                 R.id.btn_add -> { operation = "+" }
@@ -145,5 +135,20 @@ class MainActivity : AppCompatActivity() {
 
     fun TextView.limitLength(maxLength: Int) {
         filters = arrayOf(InputFilter.LengthFilter(maxLength))
+    }
+
+    fun restart(){
+        condition_operator = true
+        dotValue=true
+        plusMinsValue = true
+
+        textView_input.setText("")
+        textView_output.setText("")
+
+        oldNumber = ""
+        newNumber = ""
+
+        holder = ""
+        holder2 = ""
     }
 }
