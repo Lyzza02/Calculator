@@ -1,4 +1,4 @@
-# Calculator-App
+# Calculator-Kotlin-App
 Creating a Simple Calculator using Kotlin that will perform arthmetic operations on numbers.
 The Operations available are Addition, Subtraction, Multiplication, Division, Modulo, and Negate.
 
